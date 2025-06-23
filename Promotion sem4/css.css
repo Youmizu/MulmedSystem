@@ -1,0 +1,405 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #EDEEC0;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    background: #433E0E;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    transition: .3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100px;
+    display: block;
+    text-align: center;
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+nav a:hover {
+    background: #817c48;
+    transform: scale(1.1);
+}
+
+nav.sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.coverJudul {
+    display: flex;
+    float: left;
+    margin-left: 40px;
+ 
+}
+
+.Video {
+    width: 1000px;
+    height: 563px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 100px auto 20px auto;
+}
+
+
+.nowplaying {
+    background: #7C9082;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.juduldetaildiv {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding-bottom: 0;
+    color: #ffffff;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+#judul.juduldetail {
+    color: rgb(0, 136, 255);
+    margin-top: 40px;
+    font-weight: 900;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    line-height: 50px;
+    font-size: 36px;
+}
+
+#isi.juduldetail {
+    color: #271e1e;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-left: 40px;
+}
+
+.synopsis {
+    color: #271e1e;
+    background: #ebe5b8;
+    text-align: justify;
+    display: flex;
+    float: left;
+    line-height: 30px;
+    flex-direction: column;
+    margin-left: 40px;
+    padding-left: 100px;
+    padding-right: 400px;
+
+}
+#sinopsis {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#isisinopsis {
+    font-size: 18px;
+}
+
+
+
+button.watchmovie {
+    padding: 20px 40px;
+    font-size: 18px;
+    margin: 80px 200px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color:#271e1e;
+    background: rgb(255, 226, 61);
+    transition: all 0.3s linear;
+}
+
+
+button.watchmovie:hover {
+    background: rgb(188, 163, 18);
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+
+.cast {
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    
+}
+#casthead {
+    background: #7C9082;
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.people {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    font-size: 18px;
+    margin: 5% 5%;
+    justify-content: space-evenly;
+    line-height: 20px;
+    
+}
+
+#border {
+    width: 200px;
+    padding-top: 20px;
+    line-height: 30px;
+    background-color: #D0C88E;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+#border:hover {
+    filter: grayscale(50%);
+    transform: scale(1.1);
+}
+
+.referensi {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+    font-size: 18px;
+    line-height: 30px;
+}
+#referensihead {
+    background: #7C9082;
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.referensilink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 15%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.referensilink p {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background: #433E0E;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px auto;
+    width: 100%;
+    display: flex;
+}
+
+.footleft {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 3%;
+    line-height: 20px;
+    text-align: justify;
+    max-width: 30%;
+}
+
+.footcenter {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 3%;
+    line-height: 20px;
+    text-align: justify;
+    max-width: 25%; 
+}
+
+.footright {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 3%;
+    line-height: 20px;
+    text-align: justify;
+    flex-direction: column  ;
+    max-width: 25%;
+    
+}
+
+#contact {
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#contact p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#contact img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+.socialmedia {
+    display: inline;
+    flex-direction: column;
+    margin: 40px auto auto 0;
+    line-height: 20px;
+    text-align: justify;
+    max-width: 100%;
+}
+
+.social {
+    display: flex;
+    align-items: normal;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.social a:hover {
+    font-size: 16px;
+    color: gold;
+    text-decoration: none;
+}
+
+.about {
+    font-weight: lighter;
+    margin: 30px auto;
+    justify-content: space-evenly;
+    
+}
+
+.dosen {
+    margin-bottom: 40px;
+}
+
+.dosen p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+/* ...existing code... */
+
+@media (max-width: 900px) {
+    .Video {
+        width: 100% !important;
+        height: auto !important;
+        margin: 40px auto 20px auto !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .synopsis {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 10px;
+    }
+
+    #judul.juduldetail,
+    #isi.juduldetail {
+        margin-left: 10px;
+        padding-left: 0;
+    }
+
+    .people {
+        gap: 30px;
+        margin: 5% 2%;
+        flex-direction: column;
+    }
+
+    .footer,
+    .footleft,
+    .footcenter,
+    .footright {
+        flex-direction: column !important;
+        max-width: 100% !important;
+        margin: 10px 0 !important;
+        text-align: center !important;
+    }
+}
+
