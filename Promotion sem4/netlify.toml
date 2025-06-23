@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/Promotions.html"
+status = "200"
